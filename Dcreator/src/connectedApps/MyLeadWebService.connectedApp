@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>PrasadDL1991@gmail.com</contactEmail>
+    <label>MyLeadWebService</label>
+    <oauthConfig>
+        <callbackUrl>http://localhost/SalesforceRest/oauth_callback.php</callbackUrl>
+        <consumerKey>3MVG98SW_UPr.JFiWYaqi3vSCYRD0sV3kX29p_Bsf_dNZJ_rxHE2gPM3j.4PAnLYi_TJpxyuOvnEaOUfebH5n</consumerKey>
+        <scopes>Full</scopes>
+    </oauthConfig>
+</ConnectedApp>

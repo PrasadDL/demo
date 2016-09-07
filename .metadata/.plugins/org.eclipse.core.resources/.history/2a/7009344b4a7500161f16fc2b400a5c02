@@ -1,0 +1,16 @@
+<apex:page Controller="mySingleAccount">
+<apex:form >
+<apex:pageBlock title="Info">
+<apex:pageBlockSection title="SingleAccoutInfo">
+<apex:outputField value="{!Account.name}"/>
+
+</apex:pageBlockSection>
+</apex:pageBlock>
+
+ <apex:pageMessages >
+
+ 
+      </apex:pageMessages>
+</apex:form>
+
+</apex:page>

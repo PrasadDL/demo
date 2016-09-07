@@ -1,0 +1,31 @@
+<apex:page standardController="Account" >
+  <apex:form >
+  <apex:sectionHeader title="{!Account.Name}" subtitle="Account" printUrl="https://na31.salesforce.com/{!Account.Id}/p?retURL=/{!Account.Id}" help="https://c.na31.visual.force.com/apex/help"/>
+  
+  <apex:pageBlock title="Account Details" >
+ 
+  
+  <apex:pageBlockSection title="Account Information" columns="3" >  
+  <apex:outputfield value="{!Account.Name}"> </apex:outputfield>
+  
+  <apex:outputfield value="{!Account.Rating}"> </apex:outputfield>
+  
+  <apex:outputfield value="{!Account.AccountNumber}"> </apex:outputfield>
+ <apex:outputfield value="{!Account.Website}"> </apex:outputfield>
+ <apex:outputfield value="{!Account.Type}"> </apex:outputfield>
+ </apex:pageBlockSection>
+  <apex:pageBlockSection title="Additional Information" columns="3" >  
+ 
+  <apex:outputfield value="{!Account.Phone}"> </apex:outputfield>
+  
+  <apex:outputfield value="{!Account.Fax}"> </apex:outputfield>
+  
+ <apex:outputfield value="{!Account.AnnualRevenue}"> </apex:outputfield>
+ 
+  </apex:pageBlockSection>
+ 
+  
+  </apex:pageBlock>
+  
+  </apex:form>
+</apex:page>

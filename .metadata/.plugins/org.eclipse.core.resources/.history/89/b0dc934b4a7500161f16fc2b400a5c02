@@ -1,0 +1,24 @@
+<apex:page controller="MyServiceTestLead">
+    <apex:form >
+        <apex:messages />
+        <apex:pageBlock title="Please Enter EmailId">
+            <apex:pageBlockButtons >    <apex:commandButton value="Show" action="{!Show}"/>    </apex:pageBlockButtons>
+        <apex:pageBlockSection >
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="Enter Email"/>
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+                <apex:inputText value="{!textData}"/>
+            </apex:pageBlockSectionItem>             
+        </apex:pageBlockSection>
+
+        <apex:pageBlockTable value="{!data}" var="l">
+        <apex:column value="{!l.firstname}"/>
+        <apex:column value="{!l.lastname}"/>
+        <apex:column value="{!l.company}"/>
+        
+        </apex:pageBlockTable>
+
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

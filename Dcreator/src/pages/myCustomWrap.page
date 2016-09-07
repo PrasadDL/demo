@@ -1,0 +1,18 @@
+<apex:page controller="myWrapper" >
+
+<apex:form >
+<apex:pageBlock title="All Leads with Serial number">
+<apex:messages ></apex:messages>
+<apex:pageBlockSection title="Lead Information">
+<apex:pageBlockTable value="{!data}" var="l">
+    <apex:column value="{!l.serial}" headerValue="SerialNo"/>
+    <apex:column value="{!l.myLead.name}"/>
+    <apex:column value="{!l.myLead.phone}"/>
+    <apex:column />
+        
+
+</apex:pageBlockTable>
+</apex:pageBlockSection>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

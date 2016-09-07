@@ -1,0 +1,38 @@
+<apex:page standardController="Account" >
+  <!-- Begin Default Content REMOVE THIS -->
+  
+  <apex:sectionHeader title="Accounts" subtitle="Home"     help="https://c.na31.visual.force.com/apex/help"/>
+  
+  <apex:form >
+ 
+  <apex:pageBlock title="Recent Accounts"   >
+ 
+ <apex:commandButton action="{!URLFOR($Action.Account.New)}" value="New" id="theButton"/> 
+  <apex:pageBlockSection columns="3">
+  <apex:outputField value="{!Account.Name}"/>
+  
+  </apex:pageBlockSection>
+  </apex:pageBlock>
+  </apex:form>
+
+  
+  <apex:panelGrid columns="2" width="100%" >
+  
+  <apex:pageBlock title="Reprts">
+  
+  </apex:pageBlock>
+  
+  <apex:pageBlock title="Tools">
+  
+  </apex:pageBlock>
+  
+  
+  </apex:panelGrid> >
+  
+  
+  
+  
+  
+  
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>

@@ -1,0 +1,30 @@
+<apex:page controller="MyZipRest">
+    <apex:form >
+        <apex:messages />
+        <apex:pageBlock title="Please Enter Zipcode">
+            <apex:pageBlockButtons >    <apex:commandButton value="Show" action="{!Show}"/>    </apex:pageBlockButtons>
+        <apex:pageBlockSection >
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="Enter Zip Code"/>
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+                <apex:inputText value="{!textData}"/>
+            </apex:pageBlockSectionItem> 
+            <apex:pageBlockSectionItem >
+                City  
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="{!currCity}"></apex:outputLabel>
+            </apex:pageBlockSectionItem>              
+             <apex:pageBlockSectionItem >
+                State  
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="{!currState}"></apex:outputLabel>
+            </apex:pageBlockSectionItem>              
+        
+        </apex:pageBlockSection>
+
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

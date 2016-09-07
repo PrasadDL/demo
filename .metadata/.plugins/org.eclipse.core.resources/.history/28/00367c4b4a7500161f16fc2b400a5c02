@@ -1,0 +1,27 @@
+<apex:page StandardController="Account" recordSetVar="account123">
+  <!-- Begin Default Content REMOVE THIS -->
+  
+  
+  <apex:pageBlock title="allAccounts">
+  <apex:pageBlockTable title="Accounts" value="{!account123}" var="a" >
+  <apex:column headerValue="AccountName">
+  <apex:outputField value="{!a.name}"/>
+  </apex:column>
+ 
+ <apex:column headerValue="Phone">
+  <apex:outputField value="{!a.phone}"/>
+  </apex:column>
+  
+  <apex:column headerValue="Fax">
+  <apex:outputField value="{!a.fax}"/>
+  </apex:column>
+  
+ 
+  
+  </apex:pageBlockTable>
+ 
+  </apex:pageBlock>
+  
+ 
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>

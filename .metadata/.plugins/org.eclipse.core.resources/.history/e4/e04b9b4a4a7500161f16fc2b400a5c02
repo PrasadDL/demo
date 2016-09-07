@@ -1,0 +1,13 @@
+<apex:page sidebar="false" showHeader="true">
+
+
+{! $User.FirstName & ' ' & $User.LastName}
+<p> Today's date is {!Today()}</p>
+<p> Week's date is {!Today()+7}</p>
+<p> Today's date is {!max(1,2,3,4,5)}</p>
+<p> Today's date is {!sqrt(49)}</p>
+<p> Today's date is {! IF(CONTAINS('HELLO ','WORLD'),"true","false nah")}</p>
+
+
+
+</apex:page>

@@ -1,0 +1,37 @@
+<apex:page sidebar="true" showHeader="true" Controller="myAccountClass" >
+
+
+<apex:form >
+<center>
+<apex:commandButton value="Edit All" action="{!show}"  />
+</center>
+<apex:pageBlock id="pg" rendered="{!display2}">
+<apex:pageBlockButtons >
+<apex:commandButton value="Update" action="{!update123}" />
+
+</apex:pageBlockButtons>
+
+
+<apex:pageBlockSection >
+<apex:pageBlockTable value="{!accounts}" var="a">
+
+<apex:column headerValue="Accounts"> 
+<apex:InputField value="{!a.name}" />
+</apex:column>
+
+<apex:column headerValue="PhoneNo"> 
+<apex:InputField value="{!a.phone}" />
+</apex:column>
+
+
+<apex:column headerValue="Fax"> 
+<apex:InputField value="{!a.fax}" />
+</apex:column>
+
+</apex:pageBlockTable>
+</apex:pageBlockSection>
+</apex:pageBlock>
+</apex:form>
+
+
+</apex:page>

@@ -1,0 +1,18 @@
+<apex:page controller="searchCls">
+ <apex:form >
+ <apex:pageBlock title="Account Search" id="pb">
+ Account serach string <apex:inputText value="{!sval}">
+   <apex:actionSupport event="onkeyup"  action="{!chk}" reRender="pb"/>
+   </apex:inputText>
+ <apex:commandButton value="Search" action="{!search123}"/>
+ <br/>
+ <apex:outputLabel value="{!msg1}" style="color:red;"> </apex:outputLabel>
+ <apex:pageBlockTable value="{!data}" var="a"> 
+<apex:column value="{!a.name}"/>
+<apex:column value="{!a.phone}"/>
+<apex:column value="{!a.Fax}"/>
+</apex:pageBlockTable>
+ </apex:pageBlock>
+ 
+ </apex:form>
+</apex:page>

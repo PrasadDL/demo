@@ -1,0 +1,36 @@
+<apex:page StandardController="Employee__c" recordSetVar="employees">
+
+<apex:form >
+<apex:pageBlock >
+<apex:pageBlockSection title="ChildParentInformation">
+<apex:pageBlockTable value="{!employees}" var="e" columns="4">
+
+<apex:column headerValue="Parent name" >
+<apex:outputField value="{!e.Department__c}"/>
+</apex:column>
+
+<apex:column headerValue="Parent Total Employees" >
+<apex:outputField value="{!e.Department__r.TotalEMP__c}"/>
+</apex:column>
+
+
+<apex:column headerValue="Parent Total Salary" >
+<apex:outputField value="{!e.Department__r.Total_Salaries__c}"/>
+</apex:column>
+
+
+<apex:column headerValue="Employee name" >
+<apex:outputField value="{!e.name}"/>
+</apex:column>
+
+ 
+ </apex:pageBlockTable>
+
+
+</apex:pageBlockSection>
+
+</apex:pageBlock>
+
+</apex:form>
+
+</apex:page>

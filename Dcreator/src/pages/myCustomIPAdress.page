@@ -1,0 +1,30 @@
+<apex:page controller="MyIp">
+    <apex:form >
+        <apex:messages />
+        <apex:pageBlock title="IPaddress webservice">
+            <apex:pageBlockButtons >    <apex:commandButton value="Show" action="{!Show}"/>    </apex:pageBlockButtons>
+        <apex:pageBlockSection >
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="Enter valid IPaddress"/>
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+                <apex:inputText value="{!textData}"/>
+            </apex:pageBlockSectionItem> 
+            <apex:pageBlockSectionItem >
+                Country : 
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="{!currCountry}"></apex:outputLabel>
+            </apex:pageBlockSectionItem>              
+             <apex:pageBlockSectionItem >
+                Country Code:  
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="{!CountryCode}"></apex:outputLabel>
+            </apex:pageBlockSectionItem>              
+        
+        </apex:pageBlockSection>
+
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

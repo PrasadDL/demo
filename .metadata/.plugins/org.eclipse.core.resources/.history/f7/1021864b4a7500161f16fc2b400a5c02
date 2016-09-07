@@ -1,0 +1,10 @@
+<apex:page StandardController="Department__c">
+  <!-- Begin Default Content REMOVE THIS -->
+
+
+ <apex:detail subject="{!Department__c}" relatedList="true" title="false"/>
+
+
+
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>

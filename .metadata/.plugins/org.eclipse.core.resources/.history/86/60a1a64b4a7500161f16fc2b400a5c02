@@ -1,0 +1,53 @@
+<apex:page >
+  <!-- Begin Default Content REMOVE THIS -->
+  
+  <style type="text/css">
+  .center .mainTitle {
+    background-color: green !important;
+    color:white !important;
+    
+}
+  
+  .center {
+    text-align: center; 
+  }
+  .myDiv
+  {
+  background-color:LemonChiffon !important;
+  }
+
+h1   {color:blue;
+font-family: "Times New Roman", Times, serif;
+font-size:20px;
+}
+  
+  #message
+  {
+  font-size:18px;
+  font-family: "Times New Roman", Times, serif;
+  color:green;
+  }
+
+    #dev
+    {
+    font-style:italic;
+    }
+  
+  </style>
+  
+  <apex:outputPanel styleClass="center" layout="block">
+  <apex:pageBlock title="Hello {!$User.FirstName}, " >
+
+<div class="myDiv">
+     <h1> Dear, {!$User.FirstName} {!$User.LastName}</h1>
+      
+      <p id="message">"We welcome you to the colorful world of Dcreator.com.<br/>
+       Get a whole new experience of learning through different examples to choose from for your perfect way to becoming a 
+       <span id="dev">Salesforce developer.</span> ”       
+       </p>
+</div>       
+      </apex:pageBlock>  
+  </apex:outputPanel>
+  
+    <!-- End Default Content REMOVE THIS -->
+</apex:page>

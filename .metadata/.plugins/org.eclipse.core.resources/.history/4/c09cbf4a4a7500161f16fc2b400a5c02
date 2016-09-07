@@ -1,0 +1,33 @@
+<apex:page standardController="Account" >
+  <apex:form >
+  <apex:sectionHeader title="Account New" subtitle="New Account"/>
+  
+  <apex:pageBlock title="Account New"  mode="edit">
+  <apex:pageBlockButtons location="both"> 
+  <apex:commandButton value="Save" action="{!Save}"/>
+  </apex:pageBlockButtons>
+  
+  <apex:pageBlockSection title="Account Information" columns="3" >  
+  <apex:inputfield value="{!Account.Name}"> </apex:inputField>
+  
+  <apex:inputfield value="{!Account.Rating}"> </apex:inputField>
+  
+  <apex:inputfield value="{!Account.AccountNumber}"> </apex:inputField>
+ <apex:inputfield value="{!Account.Website}"> </apex:inputField>
+ <apex:inputfield value="{!Account.Type}"> </apex:inputField>
+ </apex:pageBlockSection>
+  <apex:pageBlockSection title="Additional Information" columns="3" >  
+ 
+  <apex:inputfield value="{!Account.Phone}"> </apex:inputField>
+  
+  <apex:inputfield value="{!Account.Fax}"> </apex:inputField>
+  
+ <apex:inputfield value="{!Account.AnnualRevenue}"> </apex:inputField>
+ 
+  </apex:pageBlockSection>
+ 
+  
+  </apex:pageBlock>
+  
+  </apex:form>
+</apex:page>

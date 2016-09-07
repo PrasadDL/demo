@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Department</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Departments</value>
+    </caseValues>
+    <fields>
+        <label><!-- AutoId --></label>
+        <name>AutoId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Avg Salary --></label>
+        <name>Avg_Salary__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalEMP --></label>
+        <name>TotalEMP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total No Emp --></label>
+        <name>Total_No_Emp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total No US Emp --></label>
+        <name>Total_No_US_Emp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Salaries --></label>
+        <name>Total_Salaries__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

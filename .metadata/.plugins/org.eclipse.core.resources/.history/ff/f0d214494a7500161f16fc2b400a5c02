@@ -1,0 +1,7 @@
+<apex:page standardController="Opportunity">
+    
+    {!Opportunity.Name} <br/>
+    {!Opportunity.Account.Name}
+    {!Opportunity.Account.ID}
+    
+</apex:page>

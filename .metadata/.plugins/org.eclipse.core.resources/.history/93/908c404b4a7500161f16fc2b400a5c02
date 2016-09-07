@@ -1,0 +1,31 @@
+<apex:page controller="serviceObjects">
+    
+    <apex:form >    
+    <apex:messages />
+    <apex:pageBlock >
+     <center><apex:commandButton value="Currency Convertor " action="{!currencyConvertor}"/></center>
+        <apex:pageBlockSection columns="2">
+       
+            <apex:pageblockSectionItem >
+                <apex:outputLabel value="FROM Currency Country"/>
+            </apex:pageblockSectionItem>        
+            <apex:pageblockSectionItem >                
+                <apex:selectList size="1" value="{!country}">
+                    <apex:selectOptions value="{!countries}"/>
+                    <apex:actionSupport event="onchange" reRender="a"/>
+                </apex:selectList>                
+            </apex:pageblockSectionItem>
+            <apex:pageblockSectionItem >
+                <apex:outputLabel value="TO Currency Country"/>
+            </apex:pageblockSectionItem>            
+            <apex:pageblockSectionItem >
+                <apex:selectList size="1" value="{!city}" id="a">
+                    <apex:selectOptions value="{!cities}"/>
+                </apex:selectList>
+            </apex:pageblockSectionItem>            
+        </apex:pageBlockSection>        
+    </apex:pageBlock>
+
+    </apex:form>
+
+</apex:page>

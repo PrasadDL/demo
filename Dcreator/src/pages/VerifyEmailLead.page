@@ -1,0 +1,48 @@
+<apex:page controller="MyEmailVerifyLead" docType="html-5.0">
+    <apex:form >
+        <apex:messages />
+        <apex:pageBlock title="Create New Lead">
+            <apex:pageBlockButtons >    
+            <apex:commandButton value="Create" action="{!Create}"/>
+            <apex:commandButton value="Reset" action="{!nullify}" />
+            
+            </apex:pageBlockButtons>
+        <apex:pageBlockSection >
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="Enter First Name"/>
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+                <apex:inputText value="{!textFirstName}"/>
+            </apex:pageBlockSectionItem>             
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="Enter Last Name"/>
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+                <apex:inputText value="{!textLastName}"/>
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="Enter Email"/>
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+                <apex:inputText value="{!textEmail}"/>
+            </apex:pageBlockSectionItem>             
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="Enter Annual Revenue"/>
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+                <apex:input value="{!textAnnualRevenue}" type="number" />
+            </apex:pageBlockSectionItem> 
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="Enter Company"/>
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+                <apex:inputText value="{!textCompany}"/>
+            </apex:pageBlockSectionItem>  
+ 
+                                  
+        </apex:pageBlockSection>
+
+
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

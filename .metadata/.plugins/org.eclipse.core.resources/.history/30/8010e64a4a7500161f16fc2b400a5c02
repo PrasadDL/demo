@@ -1,0 +1,3 @@
+<apex:page StandardController="Account" action="{!URLFOR('/apex/myCustomAccountPage')}">
+
+</apex:page>

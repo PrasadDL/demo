@@ -1,0 +1,7 @@
+<apex:page >
+  <h1>Help for the Employee Object</h1>
+
+    <p>The Employee object is for identifying and tracking individual Employee for job positions.</p>
+    <p>Sort Employee by Name, Location, Last Modified, and Prospect Rating.</p>
+
+</apex:page>

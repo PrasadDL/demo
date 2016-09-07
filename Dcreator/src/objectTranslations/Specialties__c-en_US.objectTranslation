@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Speciality</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Specialties</value>
+    </caseValues>
+    <fields>
+        <label><!-- Doctor --></label>
+        <name>Doctor__c</name>
+        <relationshipLabel><!-- Specialties --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Brain</masterLabel>
+            <translation><!-- Brain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Foot</masterLabel>
+            <translation><!-- Foot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hearing</masterLabel>
+            <translation><!-- Hearing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Heart</masterLabel>
+            <translation><!-- Heart --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Immune System</masterLabel>
+            <translation><!-- Immune System --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

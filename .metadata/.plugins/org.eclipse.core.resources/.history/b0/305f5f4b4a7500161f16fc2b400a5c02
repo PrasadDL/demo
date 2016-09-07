@@ -1,0 +1,18 @@
+<apex:page controller="actionClass">
+<apex:form >
+
+
+Please check this box to call apex controller from JavaScript
+
+<apex:actionFunction name="actionBollywood" action="{!doThis}"/>
+<apex:inputCheckbox onclick="actionBollywood()" />
+
+<apex:outputLabel value="{!v1}" style="color:red;"> </apex:outputLabel>
+<apex:pageBlock >
+<apex:pageBlockTable value="{!data}" var="a"> 
+<apex:column value="{!a.name}"/>
+<apex:column value="{!a.phone}"/>
+</apex:pageBlockTable>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

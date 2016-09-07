@@ -1,0 +1,18 @@
+<apex:page controller="supportcls">
+  <apex:form >
+  <apex:outputPanel >
+  <apex:outputLabel value="click me"  ></apex:outputLabel>
+  <!--apex:actionSupport event="onmousemove" action="{!medoing}"/-->
+   <!--apex:actionSupport event="onmouseout" action="{!medoing2}"/-->
+
+<apex:actionSupport event="onclick"   action="{!medoing2}"/>
+
+  <apex:outputLabel value="{!wtimadoing}"  style="color:red;">
+    
+  </apex:outputLabel>
+  <apex:outputLabel value="you can cick here to !"  ></apex:outputLabel>
+
+  
+  </apex:outputPanel>
+  </apex:form>
+</apex:page>

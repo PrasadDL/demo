@@ -1,0 +1,20 @@
+<apex:page docType="html-5.0" controller="c">
+    <apex:pageMessages ></apex:pageMessages>    
+    <apex:form >
+        <apex:pageBlock title="Providers">
+            
+            <apex:pageBlockSection columns="1">
+                    <apex:inputText id="btid" label="BT Id:" value="{!bT_Id1}" required="true" style="float:left; width:200px">
+                &nbsp; &nbsp;
+                <apex:commandButton value="Submit" action="{!Submit}"/>
+            </apex:inputText>
+
+            <apex:outputPanel rendered="{!LEN(errMsg)!=0}" style="padding-left: 170px">                           
+             <div class="errorMsg"> <strong>Error:</strong>&nbsp;{!errMsg}</div>
+            </apex:outputPanel> 
+      
+            </apex:pageBlockSection>
+         
+        </apex:pageBlock>    
+    </apex:form>
+</apex:page>

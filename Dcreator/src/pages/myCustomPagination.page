@@ -1,0 +1,24 @@
+<apex:page controller="AccountListCon" >
+    <apex:form >
+        <apex:pageBlock id="myPageBlock" title="Account list with pagination">
+            <apex:messages />
+            <apex:PageBlockSection title="AccountList">
+                
+                <apex:pageBlockTable value="{!data}" var="a">
+                    <apex:column value="{!a.name}"/>    
+                </apex:pageBlockTable>                
+            </apex:PageBlockSection>
+            <apex:pageBlockButtons >
+                <apex:commandButton value="First" reRender="myPageBlock" disabled="{!prev}" action="{!FirstPage}"/>
+                <apex:commandButton value="Previous" reRender="myPageBlock" disabled="{!prev}" action="{!PreviousPage}" />
+                <!--Output text for records number-->
+                
+                
+                <apex:commandButton value="Next" reRender="myPageBlock" disabled="{!nxt}" action="{!NextPage}"/>
+                <apex:commandButton value="Last"  reRender="myPageBlock" disabled="{!nxt}" action="{!LastPage}"/>
+
+            </apex:pageBlockButtons>
+                
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

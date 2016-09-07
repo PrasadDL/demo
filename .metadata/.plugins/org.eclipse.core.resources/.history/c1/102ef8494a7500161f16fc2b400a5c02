@@ -1,0 +1,63 @@
+<apex:page standardController="Account" recordSetVar="Accounts">
+   
+   <apex:form >
+   <apex:pageBlock id="acc_list">
+       
+       FilterList:
+        <apex:selectList value="{! filterId }" size="1">
+            <apex:selectOptions value="{! listViewOptions}"/>
+            <apex:actionSupport event="onchange" reRender="acc_list" />
+        </apex:selectList>
+
+        <apex:pageBlockTable var="acc" value="{! Accounts}">
+            <apex:column value="{!acc.Name}"/>
+            <apex:column value="{!acc.Name}"/>        
+        </apex:pageBlockTable>
+       
+       <!--Pagination-->
+       <table width="100%">
+       <tr>
+           <td> <!-- Page X of Y --> 
+               Page: <apex:outputText value=" {!PageNumber} of {! CEILING(ResultSize / PageSize) }"/>
+           </td>
+           <td align="Center"><!-- Previous page -->
+               
+         <apex:commandLink action="{! Previous }" value="« Previous"
+     rendered="{! HasPrevious }"/>
+               
+               <!-- inactive (no earlier pages) -->
+<apex:outputText style="color: #ccc;" value="« Previous"
+     rendered="{! NOT(HasPrevious) }"/>
+&nbsp;&nbsp; 
+ <!-- Next page --> 
+           
+           <apex:commandLink action="{! Next }" value="Next"
+     rendered="{! HasNext }"/>
+               
+               <!-- inactive (no earlier pages) -->
+<apex:outputText style="color: #ccc;" value="Next»"
+     rendered="{! NOT(HasNext) }"/>
+           
+           </td>
+           
+           
+           <td align="Right"><!-- Records per page -->
+               Records per page:
+           <apex:selectList value="{!PageSize}" size="1">
+               <apex:selectOption itemValue="5" itemLabel="5"/>
+               <apex:selectOption itemValue="20" itemLabel="20"/>
+               <apex:selectOption itemValue="15" itemLabel="15"/>
+               <apex:actionSupport reRender="acc_list" event="onchange"/>
+               </apex:selectList>
+           </td>
+           
+           
+           </tr>           
+       </table>
+       
+    </apex:pageBlock>
+
+    
+    </apex:form>
+    
+</apex:page>

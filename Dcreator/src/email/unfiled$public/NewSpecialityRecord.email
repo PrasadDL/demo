@@ -1,0 +1,12 @@
+Hello UserHospital,
+
+This is an notification to let you know that new speciality record has been created and it needs your attention. Please find details below about it:
+
+1. Record is created by {!Specialties__c.CreatedBy}
+2. Doctor for this record is 
+3. Speciality of above doctor is  {!Specialties__c.Type__c}
+4. To view record please click on link https://na31.salesforce.com/{!Specialties__c.Id}
+
+
+Thanks & Regards,
+System Admin @Dcreator

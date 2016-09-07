@@ -1,0 +1,20 @@
+<apex:page controller="myWrapperAccount">
+
+<apex:form >
+<apex:pageBlock title="All Accounts with Checkboxes">
+<apex:messages ></apex:messages>
+<apex:pageBlockSection title="Account Information">
+<apex:pageBlockTable value="{!data}" var="a">
+
+        <apex:column headerValue="Boolean">
+        <apex:inputCheckbox value="{!a.phoneNull}" />
+        </apex:column>
+
+    <apex:column value="{!a.myAccount.name}"/>
+    <apex:column value="{!a.myAccount.phone}"/>
+
+</apex:pageBlockTable>
+</apex:pageBlockSection>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

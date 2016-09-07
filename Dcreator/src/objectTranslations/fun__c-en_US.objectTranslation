@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>fun</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>fun</value>
+    </caseValues>
+    <fields>
+        <label><!-- ABC --></label>
+        <name>ABC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enjoy --></label>
+        <name>Enjoy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Queue --></label>
+        <name>Queue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Web --></label>
+        <name>Web__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

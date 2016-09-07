@@ -1,0 +1,20 @@
+<apex:page showHeader="true" Standardcontroller="Employee__c" extensions="Employeeobj">
+<apex:sectionHeader title="New Order" subtitle=""/> 
+    <apex:form > 
+        <apex:pageBlock title="New Employee" mode="edit">
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton value="Save" action="{!save}"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockButtons location="bottom">
+                <apex:commandButton value="Save" action="{!save}"/><apex:commandButton value="Cancel" action="{!cancel}"/>
+            </apex:pageBlockButtons>
+                <apex:pageBlockSection title="Order Information" columns="2">
+                    <apex:inputField value="{!emp.Department__r.Name}"/>
+                    <apex:inputField value="{!emp.name}"/>
+                    <apex:inputField value="{!emp.Gender__c}"/>
+                    <apex:inputField value="{!emp.Salary__c}" />
+                    
+                </apex:pageBlockSection>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

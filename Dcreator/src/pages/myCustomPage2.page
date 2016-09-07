@@ -1,0 +1,31 @@
+<apex:page sidebar="true" showHeader="true" Controller="myAccountClass" >
+
+
+<apex:form >
+<apex:pageBlock title="Details">
+
+
+
+<apex:pageBlockSection >
+<apex:pageBlockTable value="{!accounts}" var="a">
+
+<apex:column headerValue="Accounts"> 
+<apex:OutputField value="{!a.name}" />
+</apex:column>
+
+<apex:column headerValue="PhoneNo"> 
+<apex:OutputField value="{!a.phone}" />
+</apex:column>
+
+
+<apex:column headerValue="Fax"> 
+<apex:OutputField value="{!a.fax}" />
+</apex:column>
+
+</apex:pageBlockTable>
+</apex:pageBlockSection>
+</apex:pageBlock>
+</apex:form>
+
+
+</apex:page>

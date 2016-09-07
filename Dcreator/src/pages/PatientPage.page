@@ -1,0 +1,36 @@
+<apex:page standardController="Patients__c">
+  
+  <apex:sectionHeader title="Patient Case" />
+    <apex:form id="C1">
+        <apex:pageBlock title="Patient Edit" mode="edit" id="C11" >
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!save}" value="Save"/>
+                <apex:commandButton action="{!cancel}" value="Cancel"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection id="C112" title="Patient Information" columns="1" collapsible="false">
+                
+                <apex:inputField id="F1" value="{!Patients__c.Status__c}" required="true"/>
+                
+   </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+    
+     <script>
+        F1();
+        
+        function F1(){
+            var x = document.getElementById('{!$Component.C1.C11.C112.F1}');
+            var x1=x[x.selectedIndex].text=='Closed' ? true : false;
+            x.innerHTML='';
+            var option = document.createElement("option");
+            option.text = "--None--";
+            option.value= '';
+           x.add(option);
+            var option2 = document.createElement("option");
+            option2.text = "Closed";
+            option2.value= "Closed";
+            x.add(option2);
+           // if(x1){x.value='Closed';}
+        }
+    </script>
+</apex:page>

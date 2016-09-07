@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Employee</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Employees</value>
+    </caseValues>
+    <fields>
+        <label><!-- Age --></label>
+        <name>Age__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Salary --></label>
+        <name>Annual_Salary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cities --></label>
+        <name>Cities__c</name>
+        <picklistValues>
+            <masterLabel>Boston</masterLabel>
+            <translation><!-- Boston --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chennai</masterLabel>
+            <translation><!-- Chennai --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chicago</masterLabel>
+            <translation><!-- Chicago --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Franfurt</masterLabel>
+            <translation><!-- Franfurt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hyderabad</masterLabel>
+            <translation><!-- Hyderabad --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lewtown</masterLabel>
+            <translation><!-- Lewtown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>London</masterLabel>
+            <translation><!-- London --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mumbai</masterLabel>
+            <translation><!-- Mumbai --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New York</masterLabel>
+            <translation><!-- New York --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sacramento</masterLabel>
+            <translation><!-- Sacramento --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>San fransisco</masterLabel>
+            <translation><!-- San fransisco --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country__c</name>
+        <picklistValues>
+            <masterLabel>England</masterLabel>
+            <translation><!-- England --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>France</masterLabel>
+            <translation><!-- France --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Germany</masterLabel>
+            <translation><!-- Germany --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>India</masterLabel>
+            <translation><!-- India --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USA</masterLabel>
+            <translation><!-- USA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- DOBMonth2 --></label>
+        <name>DOBMonth2__c</name>
+    </fields>
+    <fields>
+        <label><!-- DOBMonth --></label>
+        <name>DOBMonth__c</name>
+    </fields>
+    <fields>
+        <label><!-- DateOfBirth --></label>
+        <name>DateOfBirth__c</name>
+    </fields>
+    <fields>
+        <label><!-- Department --></label>
+        <name>Department__c</name>
+        <relationshipLabel><!-- Employees --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- EmpName --></label>
+        <name>EmpName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gender --></label>
+        <name>Gender__c</name>
+        <picklistValues>
+            <masterLabel>Female</masterLabel>
+            <translation><!-- Female --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Male</masterLabel>
+            <translation><!-- Male --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- NetSalary --></label>
+        <name>NetSalary__c</name>
+    </fields>
+    <fields>
+        <label><!-- NextBirthday --></label>
+        <name>NextBirthday__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quaterly Salary --></label>
+        <name>Quately_Salary__c</name>
+    </fields>
+    <fields>
+        <label><!-- ResetNext --></label>
+        <name>ResetNext__c</name>
+    </fields>
+    <fields>
+        <label><!-- SSN --></label>
+        <name>SSN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salary --></label>
+        <name>Salary__c</name>
+    </fields>
+    <fields>
+        <label><!-- SixMonthsSalary --></label>
+        <name>SixMonthsSalary__c</name>
+    </fields>
+    <fields>
+        <label><!-- SystemMsg --></label>
+        <name>SystemMsg__c</name>
+    </fields>
+    <fields>
+        <label><!-- TaxRate --></label>
+        <name>TaxRate__c</name>
+    </fields>
+    <fields>
+        <label><!-- TypeOfCitizen --></label>
+        <name>TypeOfCitizen__c</name>
+    </fields>
+    <fields>
+        <label><!-- VisaStatus --></label>
+        <name>VisaStatus__c</name>
+        <picklistValues>
+            <masterLabel>CPT</masterLabel>
+            <translation><!-- CPT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>F1</masterLabel>
+            <translation><!-- F1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>H1B</masterLabel>
+            <translation><!-- H1B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OPT</masterLabel>
+            <translation><!-- OPT --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Employee Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Date Section --></label>
+            <section>Date Section</section>
+        </sections>
+        <sections>
+            <label><!-- Other Info --></label>
+            <section>Other Info</section>
+        </sections>
+        <sections>
+            <label><!-- Salary Infomation --></label>
+            <section>Salary Infomation</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Employee pagelayout Marketing</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Date Section --></label>
+            <section>Date Section</section>
+        </sections>
+        <sections>
+            <label><!-- Other Info --></label>
+            <section>Other Info</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>NonUS Employee</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Date Section --></label>
+            <section>Date Section</section>
+        </sections>
+        <sections>
+            <label><!-- Other Info --></label>
+            <section>Other Info</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>US Employee</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Date Section --></label>
+            <section>Date Section</section>
+        </sections>
+        <sections>
+            <label><!-- Other Info --></label>
+            <section>Other Info</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Level1_EMP --></label>
+        <name>Level1_EMP</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- NonUsa --></label>
+        <name>NonUsa</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- USA --></label>
+        <name>USA</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please enter date of birth --></errorMessage>
+        <name>DOBValidation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter correct DOB --></errorMessage>
+        <name>DOBValidation1</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter valid DOB --></errorMessage>
+        <name>DOBValidation2</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select the gender --></errorMessage>
+        <name>GenderEmpty</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter salary greater than 0. --></errorMessage>
+        <name>SalaryValidation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select the visa status --></errorMessage>
+        <name>VisaStatus</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Google --></label>
+        <name>Google</name>
+    </webLinks>
+    <workflowTasks>
+        <description><!-- New employee is created --></description>
+        <name>New_employee_created</name>
+        <subject><!-- New employee created --></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

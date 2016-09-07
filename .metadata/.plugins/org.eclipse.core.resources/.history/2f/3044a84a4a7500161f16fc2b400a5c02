@@ -1,0 +1,52 @@
+<apex:page >
+  <!-- Begin Default Content REMOVE THIS -->
+  
+  <style type="text/css">
+  .center .mainTitle {
+    background-color: green !important;
+    color:white !important;
+    
+}
+  
+  .center {
+    text-align: center; 
+  }
+  .myDiv
+  {
+  background-color:LemonChiffon !important;
+  }
+
+h1   {color:blue;
+font-family: "Times New Roman", Times, serif;
+font-size:20px;
+}
+  
+  #message
+  {
+  font-size:18px;
+  font-family: "Times New Roman", Times, serif;
+  color:green;
+  }
+
+    #dev
+    {
+    font-style:italic;
+    }
+  
+  </style>
+  
+  <apex:outputPanel styleClass="center" layout="block">
+  <apex:pageBlock title="Hello {!$User.FirstName}, " >
+
+<div class="myDiv">
+     <h1>  THe Help Page</h1>
+      
+      <p id="message">Please call 9111 for
+       <span id="dev">HELP</span>        
+       </p>
+</div>       
+      </apex:pageBlock>  
+  </apex:outputPanel>
+  
+    <!-- End Default Content REMOVE THIS -->
+</apex:page>

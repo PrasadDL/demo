@@ -1,0 +1,30 @@
+<apex:page controller="leadcls">
+ <apex:form >
+ <apex:pageBlock >
+ <apex:pageBlockButtons location="top" >
+ 
+ <apex:commandButton value="Show" action="{!Show}"/>
+ </apex:pageBlockButtons>
+ <apex:pageBlockButtons location="bottom" >
+ <apex:commandLink value="First" />
+<apex:commandLink value="Next" />
+<apex:commandLink value="Previous" />
+<apex:commandLink value="Last" />
+ </apex:pageBlockButtons>
+ 
+ <apex:pageBlockTable value="{!data123}" var="a">
+ <apex:column headerValue="S No">
+ <apex:outputLabel value="{!a.a}"/>
+ </apex:column>
+ <apex:column headerValue="Check box">
+ <apex:inputCheckbox value="{!a.b}"/>
+ </apex:column>
+ <apex:column value="{!a.l.name}"/>
+ <apex:column value="{!a.l.Phone}"/>
+ <apex:column value="{!a.l.Company}"/>
+ 
+  </apex:pageBlockTable>
+ </apex:pageBlock>
+ 
+ </apex:form>
+</apex:page>

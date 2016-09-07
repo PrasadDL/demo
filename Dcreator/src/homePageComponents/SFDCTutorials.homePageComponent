@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <links>SFDC99</links>
+    <links>SFDCGurukul</links>
+    <links>Adminhero</links>
+    <links>SalesforceTutorial</links>
+    <links>CrmsalesforceTraining</links>
+    <links>SalesforceGeneral</links>
+    <pageComponentType>links</pageComponentType>
+</HomePageComponent>

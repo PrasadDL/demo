@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Applicant</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Applicants</value>
+    </caseValues>
+    <fields>
+        <label><!-- Email Address --></label>
+        <name>Email_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- FirstName --></label>
+        <name>FirstName__c</name>
+    </fields>
+    <fields>
+        <label><!-- LastName --></label>
+        <name>LastName__c</name>
+    </fields>
+    <fields>
+        <label><!-- MiddleName --></label>
+        <name>MiddleName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Password --></label>
+        <name>Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reenter Email Address --></label>
+        <name>Reenter_Email_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reenter Password --></label>
+        <name>Reenter_Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- Security Question Answer --></label>
+        <name>Security_Question_Answer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Security Question --></label>
+        <name>Security_Question__c</name>
+        <picklistValues>
+            <masterLabel>In what city or town was your first job?</masterLabel>
+            <translation><!-- In what city or town was your first job? --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>What is the name of your favorite childhood friend?</masterLabel>
+            <translation><!-- What is the name of your favorite childhood friend? --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>What is your mother maiden name?</masterLabel>
+            <translation><!-- What is your mother maiden name? --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>What was your childhood nick  name?</masterLabel>
+            <translation><!-- What was your childhood nick  name? --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User Name --></label>
+        <name>User_Name__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please enter correct email address --></errorMessage>
+        <name>Verify_Email</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter correct  password. --></errorMessage>
+        <name>Verify_Password</name>
+    </validationRules>
+</CustomObjectTranslation>

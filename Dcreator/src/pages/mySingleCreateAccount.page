@@ -1,0 +1,20 @@
+<apex:page standardController="Account"   extensions="accExtCls">
+  <apex:form >
+  <apex:pageBlock title="New Account">
+  <apex:pageBlockButtons >
+  <apex:commandButton value="Save" action="{!Save}"/>
+  <apex:commandButton value="Cancel" action="{!Cancel}"/>
+  </apex:pageBlockButtons>
+  <apex:pageBlockSection title="New Acc" columns="3">
+ 
+  <apex:inputField value="{!Account.Name}"/>
+  
+   <apex:inputField value="{!Account.Website}"/>
+ 
+  </apex:pageBlockSection>
+  
+  
+  </apex:pageBlock>
+  
+  </apex:form>
+</apex:page>

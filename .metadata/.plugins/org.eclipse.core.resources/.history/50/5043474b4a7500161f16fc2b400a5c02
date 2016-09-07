@@ -1,0 +1,21 @@
+<apex:page standardController="Employee__c"  sidebar="false">
+ <apex:form >
+ <apex:pageBlock title="Employee Details">
+ <apex:pageBlockButtons >
+     <apex:commandButton action="{!Save}" value="Save"/>
+     <apex:commandButton action="{!Cancel}" value="Cancel"/>
+ </apex:pageBlockButtons>
+ <apex:pageBlockSection title="Information" columns="2" collapsible="false">
+      <apex:inputField value="{!Employee__c.Name}"/>
+      <apex:inputField value="{!Employee__c.Age__c}"/>     
+      <apex:inputField value="{!Employee__c.Country__c}"/>   
+      <apex:inputField value="{!Employee__c.Cities__c}"/>   
+      <apex:inputField value="{!Employee__c.Department__c}"/>
+ </apex:pageBlockSection>
+  <apex:pageBlockSection title="Salary Info" columns="2" collapsible="false">
+      <apex:inputField value="{!Employee__c.Salary__c}"/>
+      <apex:inputField value="{!Employee__c.TaxRate__c}"/>  
+ </apex:pageBlockSection>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

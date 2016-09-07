@@ -1,0 +1,31 @@
+<apex:page StandardController="account" recordSetVar="accounts">
+
+<apex:form >
+
+<apex:pageBlock title="Update Accounts ">
+<apex:commandButton value="Save" action="{!Save}"/>
+<apex:pageBlockSection title="EditAccounts">
+<apex:pageBlockTable value="{!accounts}" var="item">
+
+<apex:column title="AccountName" headerValue="AccountName">
+<apex:inputField value="{! item.name}"/>
+</apex:column>
+
+
+<apex:column title="AccountPhone" headerValue="AccountPhone">
+<apex:inputField value="{! item.phone}"/>
+</apex:column>
+
+
+<apex:column title="AccountPhone" headerValue="AccountFax">
+<apex:inputField value="{! item.fax}"/>
+</apex:column>
+
+</apex:pageBlockTable>
+
+
+</apex:pageBlockSection>
+</apex:pageBlock>
+</apex:form>
+
+</apex:page>
